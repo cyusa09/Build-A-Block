@@ -1,0 +1,42 @@
+body{
+    height:10000px;
+}
+/* welcome poster .....................*/
+h1{
+    text-align: left;
+    background-color: rgb(206, 148, 10);
+    padding: 1px;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
+    font-size: 110px;
+}
+.welcome-box{
+    height: 100px;
+    width: 150px;
+    margin-right: smooth;
+}
+
+/* first page seen     .....................*/
+.fist-page-seen{
+    color: lightsalmon;
+    height: 200px;
+    width: 800px;
+    
+}
+
+/* navigations ...........................*/
+nav{
+    text-align: right;
+    right: 60px;
+    button{
+        padding: 5px;
+        cursor: pointer;
+        background-color:lightsalmon;
+    }
+}
+
+/*  cards ......................*/
+.cards{
+    size: 20px;
+}
