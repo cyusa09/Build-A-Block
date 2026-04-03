@@ -1,33 +1,101 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Welcome to BuildABlock AI</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="BAB.css">
-    <link rel="stylesheet" href="more-info.html">
+  <meta charset="UTF-8">
+  <title>Sales Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="first-page-seen" style="background-color:lightsalmon; height: 800px; width: 1280px;" >
-        <div class="welcome-box">
-            <h1>Welcome to <br><span style="color: rgb(83, 54, 9);">BuildABlock Artificial Inteligence</span> </h1>
+
+<div class="container">
+
+  <!-- Sidebar -->
+ <aside class="sidebar">
+  <div>
+    <div class="logo">🌾</div>
+
+    <nav class="top-nav">
+      <a href="index.html">🏠</a>
+      <a href="projects.html">🚜</a>
+      <a href="analytics.html">📊</a>
+    </nav>
+  </div>
+
+  <!-- Bottom (Accounts) -->
+  <div class="bottom-nav">
+    <a href="accounts.html">👤</a>
+  </div>
+</aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <header class="header">
+      <h2>Build ABlock Artificial Intelligence</h2>
+      <input type="text" placeholder="Search...">
+    </header>
+
+    <!-- Top Cards -->
+    <section class="cards">
+
+      <div class="card">
+        <h4>Revenue</h4>
+        <p class="big">€90,200</p>
+        <span class="green">+15%</span>
+      </div>
+
+      <div class="card">
+        <h4>Total Sales</h4>
+        <p class="big">393</p>
+        <span class="green">+5%</span>
+      </div>
+
+      <div class="card">
+        <h4>Sales Health</h4>
+        <div class="progress-circle">70%</div>
+      </div>
+
+      <div class="card">
+        <h4>Team Leaderboard</h4>
+        <ul class="leaders">
+          <li>Adnan Arroyo <span>100%</span></li>
+          <li>Dana Lowe <span>96%</span></li>
+          <li>Gloria Graham <span>87%</span></li>
+          <li>David Hudson <span>75%</span></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Charts -->
+    <section class="charts">
+
+      <div class="chart large">
+        <h4>Revenue this year</h4>
+        <div class="bars"></div>
+      </div>
+
+      <div class="chart">
+        <h4>Current Progress</h4>
+        <div class="progress-bar">
+          <div class="fill"></div>
         </div>
-    </div>
-    <div class="cards" style="height:40px">
-        <img src="" alt="">
-    </div>
+      </div>
 
+      <div class="chart">
+        <h4>Sales past year</h4>
+        <div class="line"></div>
+      </div>
 
+      <div class="chart">
+        <h4>Cost Breakdown</h4>
+        <div class="donut"></div>
+      </div>
 
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
+  </main>
+</div>
 
 </body>
+</html>
