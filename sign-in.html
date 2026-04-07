@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in here</title>
+    <link rel="stylesheet" href="sign-in.css">
+    <script src="sign-in.js"></script>
+</head>
+<body style="background-image: url('babbg.png'); 
+            background-size: cover;
+            background-position: center; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;"
+            opacity: 0.5>
+    <div class="signing-in">
+        <div class="sign-in-container">
+            <h2>Sign In</h2>
+            <form action="#" method="GET">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <button type="submit" onclick="start(event)" class="login">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="sign-up.html">Sign Up</a></p>
+        </div>
+    
+       <div class="social-signin-container">
+  <button class="btn-social apple">
+    <img src="apple-icon.png" alt=""> Continue with Apple
+  </button>
+  <button class="btn-social google">
+    <img src="google-icon.png" alt=""> Continue with Google
+  </button>
+  <button class="btn-social facebook">
+    <img src="facebook-icon.png" alt=""> Continue with Facebook
+  </button>
+</div>
+    </div>
+</body>
+</html>

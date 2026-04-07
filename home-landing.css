@@ -1,0 +1,128 @@
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cdcb9f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  .hero {
+    background: #2f6b52;
+    color: white;
+    padding: 60px 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .hero h1:hover{
+    font-size: 50px;
+    transition: ease-in-out 0.5s;
+  }
+
+  .hero p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+  }
+  .hero p:hover{
+    font-size: 20px;
+    transition: ease-in 0.5s;
+    transition: ease-out 0.5s;
+  }
+
+  /* CARD */
+  .container {
+    max-width: 400px;
+    margin: -40px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(205, 164, 29, 0.1);
+  }
+
+  /* TOGGLE */
+  .toggle {
+    display: flex;
+    background: #eee;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  .toggle span {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .active:hover{
+    color: #ffffff;
+    background-color: #3f62ff;
+    transition: ease 0.5s;
+
+  }
+
+  /* BUTTONS */
+  .btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .apple:hover {
+    transition: ease 0.5s;
+    background: black;
+    color: rgb(41, 63, 255);
+  }
+
+
+  .google:hover {
+    transition: ease 0.5s;
+    background: #000000;
+    color: white;
+
+  }
+
+  .email:hover {
+    transition: ease 0.5s;
+    background: none;
+    border: 1px solid #2f6b52;
+    color: #2f6b52;
+  }
+
+  .divider {
+    text-align: center;
+    margin: 15px 0;
+    color: gray;
+  }
+
+.footer {
+  font-size: 12px;
+  text-align: center; /* Changed from 'bottom' to 'center' */
+  color: gray;
+  margin-top: auto; /* This is the secret sauce that pushes it down */
+  padding: 20px 0;
+}
+/* AI button */
+  .ai-button{
+    color: #2f6b52;
+    font-size: 12px;
+  }
+.ai-button:hover{
+    transition: ease 0.5s;
+    color: #eee;
+    background-color: #4c9778;
+    size: 18px;
+    
+}

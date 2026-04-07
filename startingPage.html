@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BuildABlock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="startingPage.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-green-950 via-yellow-900 to-yellow-500 text-white">
+
+  <!-- NAVBAR -->
+  <header class="flex items-center justify-between px-10 py-6">
+    <div>
+      <h1 class="text-xl font-bold from-green-400 via-yellow-400 to-green-400">BuildABlock</h1>
+      <p class="text-sm text-gray-400">Artificial Intelligence</p>
+    </div>
+
+        <!-- Buttons -->
+    <div class="flex justify-center gap-6 mb-10" top-10>
+      <button class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-full font-semibold" onclick="Farming()">Farming  </button>
+      <button class="bg-yellow-400 border border-yellow-400 px-6 py-3 rounded-full text-white hover:bg-green-500 hover:text-white" onclick="Construction()">Construction</button>
+    </div>
+
+    <button class="bg-green-500 hover:bg-green-600 px-5 py-2 rounded-full" onclick="app()">Launch App</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative text-center px-6 py-20">
+
+    <!-- Center Logo -->
+    <div class="mb-6">
+      <div class="text-green-400 text-lg font-semibold">BuildABlock</div>
+      <p class="text-xs text-gray-400">Plan your land, build your future.</p>
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+      <span class="text-green-400">BuildABlock</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-xl text-gray-300 mb-4">
+      Manage your land with ease using our AI-powered platform. <br>From inventory to finances, we've got you covered.
+    </p>
+
+    <p class="text-gray-400 max-w-2xl mx-auto mb-10">
+      Built for small businesses and entrepreneurs in Rwanda and East Africa.
+      Manage inventory, track finances, and generate real-time reports—all in one place.
+    </p>
+    <!-- Features row -->
+    <div class="flex justify-center gap-8 text-gray-400 text-sm">
+      <span>✔ No credit card required</span>
+      <span>✔ Cancel anytime</span>
+    </div>
+
+    <!-- LEFT CARD -->
+    <div class="absolute left-10 top-40 rotate-[-10deg] hidden md:block">
+      <div class="bg-green-800/30 backdrop-blur-md p-6 rounded-xl shadow-lg w-64">
+        <h3 class="font-semibold mb-2">Manage Farming Operations</h3>
+        <ul class="text-sm text-gray-300 space-y-1">
+          <li>• User Authentication</li>
+          <li>• Product Management</li>
+          <li>• Life tracking </li>
+          <li>• Expense Tracking</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div class="absolute right-10 top-40 rotate-[10deg] hidden md:block">
+      <div class="bg-green-800/30 backdrop-blur-md p-6 rounded-xl shadow-lg w-64">
+        <h3 class="font-semibold mb-2">Empower Your Business</h3>
+        <ul class="text-sm text-gray-300 space-y-1">
+          <li>• Track Sales & Stock</li>
+          <li>• Monitor Expenses</li>
+          <li>• Boost Profits</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

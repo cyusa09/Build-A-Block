@@ -1,0 +1,123 @@
+:root {
+    --primary-green: #2d5a27;
+    --accent-yellow: #f6b352;
+    --card-bg: #ffe4c4; /* Bisque */
+    --text-main: #333;
+    --text-muted: #666;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dce3ba; /* Light green background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.hero h1 span { color: var(--accent-yellow); }
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(45, 90, 39, 0.2); /* Green-tinted shadow */
+}
+
+.tab-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    padding-bottom: 5px;
+}
+
+.tab.active {
+    color: var(--text-main);
+    border-bottom: 2px solid var(--primary-green);
+    font-weight: bold;
+}
+
+.btn-social {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #f0f0f0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-social:hover { background: #e2e2e2; }
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--text-muted);
+    position: relative;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-footer {
+    margin-top: 25px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
