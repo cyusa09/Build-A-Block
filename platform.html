@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildABlock | All-in-One Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="platform.css">
+</head>
+<body class="bg-gradient-to-br from-green-950 via-yellow-900 to-yellow-500 text-white">
+
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-6 backdrop-blur-md bg-black/20 border-b border-white/10">
+        <h1 class="text-2xl font-bold text-yellow-400">BuildABlock</h1>
+        <div class="space-x-8 text-sm font-medium">
+            <a href="#hero" class="hover:text-yellow-400">Home</a>
+            <a href="#about" class="hover:text-yellow-400">About</a>
+            <a href="#farming" class="hover:text-green-400">Farming</a>
+            <a href="#construction" class="hover:text-yellow-400">Construction</a>
+            <a href="sign-in.html" class="bg-yellow-400 text-black px-4 py-2 rounded-full">Sign In</a>
+        </div>
+    </nav>
+
+    <div class="scroll-container">
+        
+        <section id="hero" class="section flex flex-col items-center justify-center text-center px-6">
+            <h1 class="text-6xl font-black mb-4">Build<span class="text-yellow-400">A</span>Block</h1>
+            <p class="text-xl text-gray-400 max-w-2xl">Plan your land. Build your future. The ultimate AI-powered land management platform for Rwanda.</p>
+            <div class="mt-10 flex gap-4">
+                <a href="#farming" class="bg-green-600 px-8 py-3 rounded-full font-bold">Explore Farming</a>
+                <a href="#construction" class="bg-yellow-500 px-8 py-3 rounded-full font-bold text-black">Manage Construction</a>
+            </div>
+        </section>
+
+        <section id="farming" class="section bg-radial-gradient from-[#052e16] to-black p-10">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-green-400 mb-10">Farm Intelligence</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card p-6 bg-white/5 border border-white/10 rounded-2xl">
+                        <p class="text-gray-400">Soil Moisture</p>
+                        <h3 class="text-5xl font-bold mt-2">38%</h3>
+                    </div>
+                    <div class="card p-6 bg-white/5 border border-white/10 rounded-2xl">
+                        <p class="text-gray-400">Temperature</p>
+                        <h3 class="text-5xl font-bold mt-2">24°C</h3>
+                    </div>
+                    <div class="card md:col-span-1 p-6 bg-white/5 border border-white/10 rounded-2xl">
+                        <h4 class="font-bold mb-4">Agronomist AI</h4>
+                        <div id="farm-chat" class="h-40 overflow-y-auto text-sm text-gray-300 mb-4"></div>
+                        <button onclick="askAI('farming')" class="w-full bg-green-600 py-2 rounded-lg">Get Advice</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="construction" class="section bg-[#0f172a] p-10">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-yellow-400 mb-10">Site Manager</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="card p-8 bg-white/5 border border-white/10 rounded-3xl">
+                        <h3 class="text-xl font-bold mb-4">Project Progress</h3>
+                        <div class="w-full bg-gray-700 h-4 rounded-full overflow-hidden">
+                            <div class="bg-yellow-400 h-full w-[45%] shadow-[0_0_15px_#facc15]"></div>
+                        </div>
+                        <p class="mt-4 text-gray-400">Currently in: <span class="text-white font-bold">Walling Phase</span></p>
+                    </div>
+                    <div class="card p-8 bg-white/5 border border-white/10 rounded-3xl">
+                        <h3 class="text-xl font-bold mb-4">AI Vision Generator</h3>
+                        <div id="vision-output" class="text-sm text-gray-400 italic mb-6">Click below to visualize your house on Plot-250-KGL.</div>
+                        <button onclick="askAI('construction')" class="bg-white text-black px-6 py-3 rounded-xl font-bold">✨ Generate Design</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="section bg-gradient-to-t from-[#052e16] to-black p-10">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-green-400 mb-10">Community Hub</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto mb-8">Connect with fellow farmers and builders in Rwanda. Share tips, ask questions, and collaborate on projects.</p>
+                <button class="bg-green-600 px-8 py-3 rounded-full font-bold">Join the Discussion</button>
+            </div>
+
+    </div>
+
+    <div id="auth-loader" class="hidden fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#052e16]">
+    <div class="loader-container">
+        <div class="glow-ring"></div>
+        <div class="sector-pulse"></div>
+    </div>
+    <h2 class="mt-8 text-yellow-400 font-bold tracking-[0.2em] animate-pulse">AUTHENTICATING SITE...</h2>
+    <p class="text-white/40 text-xs mt-2">Connecting to BuildABlock Node Engine</p>
+</div>
+
+
+<footer class="text-center py-6 text-sm text-gray-500">
+    &copy; 2024 BuildABlock. All rights reserved.
+</footer>
+
+    <script src="platform.js"></script>
+</body>
+</html>
